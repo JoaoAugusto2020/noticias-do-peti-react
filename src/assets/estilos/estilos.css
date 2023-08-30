@@ -1,0 +1,8 @@
+@import url(./estrutura-base.css);
+@import url(./padronizacao.css);
+
+/* Páginas */
+@import url(./index.css);
+@import url(./sobre.css);
+@import url(./noticias.css);
+@import url(./autenticar.css);

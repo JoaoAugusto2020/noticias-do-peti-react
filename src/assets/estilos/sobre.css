@@ -1,0 +1,35 @@
+.valoresItem {
+    transition: 1s;
+    background: rgb(255,99,0);
+    background: linear-gradient(135deg, rgba(255,99,0,1) 0%, rgba(255,130,50,1) 100%);
+    border-radius: 50px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 210px;
+    margin: 10px;
+    padding-top: 30px;
+}
+.valoresItem:hover {
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+.foto {
+    transition: 1s;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.foto:hover {
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+.equipeItem {
+    min-width: 400px;
+    max-width: 500px;
+    height: 100%;
+    margin: 20px 40px;
+}
