@@ -135,8 +135,8 @@ header > div {
 #Menu {
     background-color: #FF6300;
     color: white;
-    height: 100%;
-    width: 100%;
+    height: 100%;   /* TÁ DANDO ERRO AQUI */
+    width: 100%;    
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -144,6 +144,7 @@ header > div {
     overflow: hidden;
 }
 .col-2:has(> #Menu) {
+    height: 100%;
     padding: 0px;
     margin: 0pxs;
 }
@@ -182,14 +183,26 @@ i#iconAngleDrop:left + .dropText:hover{
 
 
 /* Hamburguer */
-#hamburguerBtn{
+#iconAngleHide {
+    position: absolute;
     z-index: 2;
     width: 50px;
     height: 50px;
     border: #080F47;
     border-radius: 50px;
     background-color: #080F47;
+    top: 50%;
+    left: 15%;
+    transition: 0.1s;
+}
+#hamburguerBtn{
     position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: #080F47;
+    border-radius: 50px;
+    background-color: #080F47;
     top: 50%;
     left: 15%;
     transition: 0.1s;
