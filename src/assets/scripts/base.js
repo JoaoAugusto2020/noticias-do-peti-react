@@ -52,9 +52,11 @@ function menuShow(valor){
         //VISIVEL
 
         //Movimento do botão
-        document.getElementById('hamburguerBtn').style.left='15%';
+        document.getElementById('hamburguerBtn').style.right='-10px';
+        document.getElementById('hamburguerBtn').style.left='';
 
         //Movimento do Menu
+        document.getElementById('Menu').style.transition='1.0s';
         document.getElementById('Menu').style.width='auto';
         document.getElementById('paginas').style.visibility='visible';
 
@@ -62,15 +64,15 @@ function menuShow(valor){
         document.getElementById('iconAngleHide').style.transform='rotate(0deg)';
         document.getElementById('iconAngleHide').style.transition='0.2s';
 
-        
-
     }else{
         //ESCONDENDO
         
         //Movimento do botão
-        document.getElementById('hamburguerBtn').style.left='1%';
+        document.getElementById('hamburguerBtn').style.right='';
+        document.getElementById('hamburguerBtn').style.left='10px';
         
         //Movimento do Menu
+        document.getElementById('Menu').style.transition='1.0s';
         document.getElementById('Menu').style.width='5%';
         document.getElementById('paginas').style.visibility='hidden';
         if(cont1%2!=0){

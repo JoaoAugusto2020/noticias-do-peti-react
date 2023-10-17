@@ -1,6 +1,8 @@
 // import { useState } from "react";
 import "./menu.css";
 
+import noticias from './../../pages/Noticias/noticias';
+
 const Menu = () => {
     return(
         <div className="col-2" style={{ padding: '0px' }}>
@@ -9,7 +11,7 @@ const Menu = () => {
             {/* <!-- Menu --> */}
                 {/* <!-- Hamburguer --> */}
                 <div className="hamburguer">
-                    <button id="hamburguerBtn" className="btn" onClick={() => menuShow(1)}><i id="iconAngleHide" className="fa-solid fa-angle-left fa-xl"></i></button>
+                    <button id="hamburguerBtn" className="btn" onClick={() => menuShow(1)}><i id="iconAngleHide" className="fa-solid fa-angle-left fa-xl" style={{ color: 'white' }}></i></button>
                 </div>
 
                 {/* <!-- Menu em si --> */}
@@ -17,7 +19,7 @@ const Menu = () => {
                     <div id="Menu">
                         <div id="paginas">
                             <a className="linkBrancoLaranja" href="./index.html">Início</a><br/>
-                            <a className="linkBrancoLaranja" href="./noticias.html">Notícias</a><br/><br/>
+                            <a className="linkBrancoLaranja" href={noticias}>Notícias</a><br/><br/>
 
                             <i id="iconAngleDrop" className="fa-sharp fa-solid fa-angle-down" onClick={() => dropdownList(1)}></i>
                             <button className="dropText desistilizacao textoBranco" type="button" onClick={() => dropdownList(1)}>Categorias</button><br/>

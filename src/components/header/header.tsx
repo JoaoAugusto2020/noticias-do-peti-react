@@ -43,7 +43,7 @@ const Header = () => {
                     {/* <!-- Acessibilidade --> */}
                     <div className="Acessibilidade">
                         <div className="acessibilidadeTexto">
-                            <button className="btn linkBrancoAzul">+A</button>
+                            <button className="btn linkBrancoAzul">+A &nbsp;</button>
                             <button className="btn linkBrancoAzul">-A</button>
                         </div>
 
