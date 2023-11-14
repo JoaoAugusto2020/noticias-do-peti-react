@@ -20,7 +20,44 @@ function trocarBtn(valor){
     }
 }
 
-//DROPTEXT
+                                                    //MENU
+var cont2 = 0;
+function menuShow(valor){
+    cont2+=valor;
+    
+    if (cont2%2==0) {
+        //VISIVEL
+
+        //Movimento do Menu
+        document.getElementById('Menu').style.width='100%';
+        document.getElementById('paginas').style.opacity='100%';
+        document.getElementById('paginas').style.visibility='visible';
+
+        //Rotação da seta
+        document.getElementById('iconHide').style.transform='rotate(0deg)';
+        document.getElementById('iconHide').style.transition='0.2s';
+
+    }else{
+        //ESCONDENDO
+        
+        //Movimento do Menu
+        document.getElementById('Menu').style.width='20%';
+        document.getElementById('paginas').style.opacity='0%';
+        document.getElementById('paginas').style.visibility='hidden';
+        if(cont1%2!=0){
+            document.getElementById('dropItens').style.transition='0s';
+            document.getElementById('dropItens').style.visibility='hidden';
+            dropdownList(1);
+        }
+        
+        //Rotação da seta
+        document.getElementById('iconHide').style.transform='rotate(-180deg)';
+        document.getElementById('iconHide').style.transition='0.2s';
+        
+    }
+}
+
+                                                    //DROPTEXT
 var cont1 = 0;
 function dropdownList(valor){ 
     cont1+=valor;
@@ -44,51 +81,7 @@ function dropdownList(valor){
     }
 }
 
-var cont2 = 0;
-function menuShow(valor){
-    cont2+=valor;
-    
-    if (cont2%2==0) {
-        //VISIVEL
-
-        //Movimento do botão
-        document.getElementById('hamburguerBtn').style.right='-10px';
-        document.getElementById('hamburguerBtn').style.left='';
-
-        //Movimento do Menu
-        document.getElementById('Menu').style.transition='1.0s';
-        document.getElementById('Menu').style.width='auto';
-        document.getElementById('paginas').style.visibility='visible';
-
-        //Rotação da seta
-        document.getElementById('iconAngleHide').style.transform='rotate(0deg)';
-        document.getElementById('iconAngleHide').style.transition='0.2s';
-
-    }else{
-        //ESCONDENDO
-        
-        //Movimento do botão
-        document.getElementById('hamburguerBtn').style.right='';
-        document.getElementById('hamburguerBtn').style.left='10px';
-        
-        //Movimento do Menu
-        document.getElementById('Menu').style.transition='1.0s';
-        document.getElementById('Menu').style.width='5%';
-        document.getElementById('paginas').style.visibility='hidden';
-        if(cont1%2!=0){
-            document.getElementById('dropItens').style.transition='0s';
-            document.getElementById('dropItens').style.visibility='hidden';
-            dropdownList(1);
-        }
-        
-        //Rotação da seta
-        document.getElementById('iconAngleHide').style.transform='rotate(-180deg)';
-        document.getElementById('iconAngleHide').style.transition='0.2s';
-        
-    }
-}
-
-//MOSTRAR PÁGINA CREATE
+                                                    //MOSTRAR PÁGINA CREATE
 function autenticarCreate(){
     //Trocar Formulário
     document.getElementById('formCreate').style.display='flex';
