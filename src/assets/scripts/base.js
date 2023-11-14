@@ -34,14 +34,14 @@ function menuShow(valor){
         document.getElementById('paginas').style.visibility='visible';
 
         //Rotação da seta
-        document.getElementById('iconAngleHide').style.transform='rotate(0deg)';
-        document.getElementById('iconAngleHide').style.transition='0.2s';
+        document.getElementById('iconHide').style.transform='rotate(0deg)';
+        document.getElementById('iconHide').style.transition='0.2s';
 
     }else{
         //ESCONDENDO
         
         //Movimento do Menu
-        document.getElementById('Menu').style.width='5%';
+        document.getElementById('Menu').style.width='20%';
         document.getElementById('paginas').style.opacity='0%';
         document.getElementById('paginas').style.visibility='hidden';
         if(cont1%2!=0){
@@ -51,8 +51,8 @@ function menuShow(valor){
         }
         
         //Rotação da seta
-        document.getElementById('iconAngleHide').style.transform='rotate(-180deg)';
-        document.getElementById('iconAngleHide').style.transition='0.2s';
+        document.getElementById('iconHide').style.transform='rotate(-180deg)';
+        document.getElementById('iconHide').style.transition='0.2s';
         
     }
 }
