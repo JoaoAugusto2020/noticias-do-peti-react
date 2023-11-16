@@ -6,17 +6,16 @@ import noticias from './../../pages/Noticias/noticias';
 const Menu = () => {
     return(
         <div className="col-2" style={{ padding: '0px' }}>
-            {/* O MENU ESTÁ DANDO UM PROBLEMA NO HAMBURGUER */}
-            
             {/* <!-- Menu --> */}
-                {/* <!-- Hamburguer --> */}
-                <div className="hamburguer">
-                    <button id="hamburguerBtn" className="btn" onClick={() => menuShow(1)}><i id="iconAngleHide" className="fa-solid fa-angle-left fa-xl" style={{ color: 'white' }}></i></button>
-                </div>
-
-                {/* <!-- Menu em si --> */}
                 <div style={{ height: '100%' }}>
                     <div id="Menu">
+                        {/* <!-- Hamburguer --> */}
+                        <div id="hamburguer">
+                            <button id="hamburguerBtnOpen" className="btn" onClick={() => menuShow(1)}><i className="fa-solid fa-bars fa-xl" style={{ color: 'white' }}></i></button>
+
+                            <button id="hamburguerBtnClose" className="btn" onClick={() => menuShow(1)}><i className="fa-solid fa-x fa-xl" style={{ color: 'white' }}></i></button>
+                        </div>
+
                         <div id="paginas">
                             <a className="linkBrancoLaranja" href="./index.html">Início</a><br/>
                             <a className="linkBrancoLaranja" href={noticias}>Notícias</a><br/><br/>
