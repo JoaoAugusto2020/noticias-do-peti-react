@@ -44,7 +44,7 @@ function dropdownList(valor){
     }
 }
 
-var cont2 = 0;
+var cont2 = 1;
 function menuShow(valor){
     cont2+=valor;
     
