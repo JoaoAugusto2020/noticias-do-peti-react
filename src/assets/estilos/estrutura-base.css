@@ -136,22 +136,18 @@ header > div {
     background-color: #FF6300;
     color: white;
     height: 100%;   /* TÁ DANDO ERRO AQUI */
-    width: 100%;    
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    width: 100%;
     transition: 1s;
     overflow: hidden;
-}
-.col-2:has(> #Menu) {
-    height: 100%;
-    padding: 0px;
-    margin: 0pxs;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #paginas {
-    position: sticky; /*Não quer funcionar pq o #Menu já está com o flex*/
-    z-index: 1;
     top: 10px;
+    opacity: 100%;
+    transition: 0.25s;
 }
 #iconAngleDrop {
     color: white;
@@ -163,45 +159,32 @@ header > div {
 #dropItens {
     margin-left: 20px;
     transition: 1s;
-    visibility: hidden;
     height: 0px;
+    visibility: hidden;
     overflow: hidden;
 }
-#dropItens a {
-    text-decoration: none;
-    color: white;
-}
-/* .dropText:hover, #iconAngleDrop:hover, #dropItens a:hover  {
-    color:#080F47;
-    transition: color 0s;
-} */
-i#iconAngleDrop:left + .dropText:hover{
+.dropText:hover, #dropItens a:hover  {
     color:#080F47;
     transition: color 0s;
 }
-
-
 
 /* Hamburguer */
-#iconAngleHide {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 35%;
-    transition: 0.1s;
-}
-#hamburguerBtn{
-    position: absolute;
-    z-index: 2;
+#hamburguerBtnOpen{
     width: 50px;
     height: 50px;
-    border: #080F47;
-    border-radius: 50px;
-    background-color: #080F47;
-    /* AQUI QUE MEXE NA POSIÇÃO DA SETA DENTRO DO MENU */
-    top: 300px;
-    right: -10px;
     transition: 0.1s;
+
+    display: none;
+}
+#hamburguerBtnClose{
+    width: 50px;
+    height: 50px;
+    transition: 0.1s;
+
+    display: block;
+}
+#hamburguer{
+    margin: 10px 0px
 }
 
 

@@ -51,39 +51,37 @@ function menuShow(valor){
     if (cont2%2==0) {
         //VISIVEL
 
-        //Movimento do botão
-        document.getElementById('hamburguerBtn').style.right='-10px';
-        document.getElementById('hamburguerBtn').style.left='';
-
         //Movimento do Menu
-        document.getElementById('Menu').style.transition='1.0s';
-        document.getElementById('Menu').style.width='auto';
-        document.getElementById('paginas').style.visibility='visible';
+        document.getElementById('Menu').style.width='100%';
+        document.getElementById('paginas').style.opacity='100%';
+
+        //Troca do botão
+        document.getElementById('hamburguerBtnOpen').style.display='none';
+        document.getElementById('hamburguerBtnClose').style.display='block';
 
         //Rotação da seta
-        document.getElementById('iconAngleHide').style.transform='rotate(0deg)';
-        document.getElementById('iconAngleHide').style.transition='0.2s';
+        document.getElementById('hamburguer').style.transform='rotate(0deg)';
+        document.getElementById('hamburguer').style.transition='0.2s';
 
     }else{
         //ESCONDENDO
-        
-        //Movimento do botão
-        document.getElementById('hamburguerBtn').style.right='';
-        document.getElementById('hamburguerBtn').style.left='10px';
-        
+
         //Movimento do Menu
-        document.getElementById('Menu').style.transition='1.0s';
-        document.getElementById('Menu').style.width='5%';
-        document.getElementById('paginas').style.visibility='hidden';
+        document.getElementById('Menu').style.width='30%';
+        document.getElementById('paginas').style.opacity='0%';
         if(cont1%2!=0){
             document.getElementById('dropItens').style.transition='0s';
             document.getElementById('dropItens').style.visibility='hidden';
             dropdownList(1);
         }
         
+        //Troca do botão
+        document.getElementById('hamburguerBtnOpen').style.display='block';
+        document.getElementById('hamburguerBtnClose').style.display='none';
+
         //Rotação da seta
-        document.getElementById('iconAngleHide').style.transform='rotate(-180deg)';
-        document.getElementById('iconAngleHide').style.transition='0.2s';
+        document.getElementById('hamburguer').style.transform='rotate(-180deg)';
+        document.getElementById('hamburguer').style.transition='0.2s';
         
     }
 }
