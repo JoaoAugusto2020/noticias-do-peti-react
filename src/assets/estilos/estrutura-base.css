@@ -136,7 +136,7 @@ header > div {
     background-color: #FF6300;
     color: white;
     height: 100%;   /* TÁ DANDO ERRO AQUI */
-    width: 30%;
+    width: 100%;
     transition: 1s;
     overflow: hidden;
     
@@ -146,7 +146,7 @@ header > div {
 }
 #paginas {
     top: 10px;
-    opacity: 0%;
+    opacity: 100%;
     transition: 0.25s;
 }
 #iconAngleDrop {
@@ -159,8 +159,8 @@ header > div {
 #dropItens {
     margin-left: 20px;
     transition: 1s;
-    height: 0px;
-    visibility: hidden;
+    height: 80px;
+    visibility: visible;
     overflow: hidden;
 }
 .dropText:hover, #dropItens a:hover  {
@@ -174,14 +174,14 @@ header > div {
     height: 50px;
     transition: 0.1s;
 
-    display: block;
+    display: none;
 }
 #hamburguerBtnClose{
     width: 50px;
     height: 50px;
     transition: 0.1s;
 
-    display: none;
+    display: block;
 }
 #hamburguer{
     margin: 10px 0px

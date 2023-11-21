@@ -21,7 +21,7 @@ function trocarBtn(valor){
 }
 
 //DROPTEXT
-var cont1 = 0;
+var cont1 = 1;
 function dropdownList(valor){ 
     cont1+=valor;
     
@@ -44,7 +44,7 @@ function dropdownList(valor){
     }
 }
 
-var cont2 = 1;
+var cont2 = 0;
 function menuShow(valor){
     cont2+=valor;
     
